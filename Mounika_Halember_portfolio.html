@@ -9,6 +9,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
        <style>
+           nav{
+               background-color: #164A41; 
+               color: #E8CEBF;
+           }
            img{
                width:200px;
                display: inline-block;
@@ -30,17 +34,24 @@
         
    </head>
    <body style="background-color:#E8CEBF" >
-          <header class="display-2 text-center" style="background-color: #164A41; color: #E8CEBF"> MY PORTFOLIO</header>
+       <nav id="navbar" class="navbar sticky-top ">
+           <header class="display-4" style="background-color: #164A41; color: #E8CEBF"> MY PORTFOLIO</header>
+           <a href=#about class="btn mx-0 p-0 d-inline-flex" style="font-family:Helvetica, Arial, sans-serif;font-size:20px; color: #E8CEBF">About</a>
+           <a href=#Work class="btn mx-0 p-0" style="font-family:Helvetica, Arial, sans-serif;font-size:20px; color: #E8CEBF">Work Experiences</a>
+           <a href=#project class="btn mx-0 p-0" style="font-family:Helvetica, Arial, sans-serif;font-size:20px; color: #E8CEBF">Personal Project</a>
+           <a href=#contact class="btn mx-0 p-0" style="font-family:Helvetica, Arial, sans-serif;font-size:20px; color: #E8CEBF">Contact</a>
+       </nav>
+       
        <br>
        <div class="container-md"> 
       <div class="row vh-20 my-5 align-items-center  justify-content-around no-gutters">
-          <section class="col-6">
+          <section id="about" class="col-6">
           <h1 style="color:#164A41">Hello I am Halember Mounika</h1>
-              <h4 style="color: #164A41">I am a fresher looking for jobs in Web Development industry</h4>
+              <h4 style="color: #164A41">I am a fresher looking for jobs in Web Development field</h4>
           <p style="color:#164A41;text-align: justify">Below is my resume </p> 
               <a href="MounikaHalember_Resume.pdf" class="btn"style="background-color: cadetblue" >RESUME</a>
           </section>
-       <img class="col-3" src="/C:\Users\Mounika\Desktop\New folder\IMG_20200109_130425.jpg">
+       <img class="col-3" src="/C:\Users\Mounika\Desktop\Portfolio\IMG_20200109_130425.jpg">
             </div>
        </div>
               <div class="container-fluid "> 
@@ -62,7 +73,7 @@
        </div>
        <div class="container-fluid">
             <div style="background-color:#d4a387;height:550px;max-height:550px" class="row row-sm-4 justify-content-center align-items-center ">
-                <section class="col mx-5" >
+                <section id="work" class="col mx-5" >
                    <h2 style="color: #164A41">Work Experiences</h2>
                </section>
                <section class="col">
@@ -80,7 +91,7 @@ breakdown.</h7>
                        </div>
                </section>
            </div>
-           <div class="container-fluid text-center py-5 ">
+           <div id="project" class="container-fluid text-center py-5 ">
            <h2 style="color: #164A41" >Personal Project</h2>
                    <figure>
                   <img class=" img-fluid my-5  " src="https://i.pinimg.com/originals/81/cb/72/81cb726b200623ea37c1be64aea9a6a2.jpg">
@@ -93,7 +104,7 @@ breakdown.</h7>
        </div> 
 
         <footer class="footer"><div class="container-fluid p-0 d-inline-block " >
-       <div class="row align-items-center  justify-content-around"  >
+       <div id="contact" class="row align-items-center  justify-content-around"  >
     <h2 class="col-4 p-5"style="color:bisque">For more details</h2>
            <div class="col-6">
         <ul>
@@ -115,4 +126,5 @@ breakdown.</h7>
        </div>
     </footer>
     </body>
+       
 </html>
